@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us -Uttara Unity Hospital</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: #003366;
+            background-image: url(img/18691897.jpg);
+            background-size: cover;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-image: url(logo.png);
+            background-size: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .title {
+            font-size: 45px;
+            font-family: "Comic Sans MS", cursive;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        nav {
+            background-color: #ffffff;
+            border: 1px solid #003366;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+            font-family: "Comic Sans MS", cursive;
+            font-size: 21px;
+            padding: 15px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            background-color: #003366;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .contact-us {
+            background: radial-gradient(#ffffff, #f0f8ff);
+            border: 3px solid #003366;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 6px 6px 20px rgba(0,0,0,0.5);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-us h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #003366;
+            font-family: "Comic Sans MS", cursive;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .contact-us p {
+            text-align: justify;
+            color: #000;
+            margin: 10px 0;
+        }
+
+        .contact-details {
+            margin-top: 20px;
+        }
+
+        .contact-details h3 {
+            color: #003366;
+            font-family: "Comic Sans MS", cursive;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .contact-details p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ffffff;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 30px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            .contact-us {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="title">Uttara Unity Hospital</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="patient.php">Patient & Visitor's</a></li>
+            <li><a href="doctor.php">Doctors</a></li>
+            <li><a href="feedback.php">Feedback</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="contact-us">
+            <h2>Contact Us</h2>
+            <hr>
+            <p>We are here to assist you. Feel free to reach out to us for any inquiries or assistance regarding our hospital services.</p>
+            <div class="contact-details">
+                <h3>Visit us</h3>
+                <p>Holding 77, Beribadh Road, Turag, Uttara, Dhaka 1230, Bangladesh</p>
+                
+                <h3>Hunting Number</h3>
+                <p>096 40 UTTARA (888272)</p>
+                
+                <h3>Mobile number</h3>
+                <p>01872607360, 01872607361, 01872607362, 01872607363, 01872607364, 01872607365, 01872607366, 01872607367, 01872607368, 01872607369</p>
+                
+                <h3>E-mail address</h3>
+                <p>info@uuh.org.bd</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; <span id="year"></span> - All Rights Reserved - <a href="#">UU Hospital</a></p>
+        <p>Powered By UU Hospital</p>
+        <p>Developed by - ASIF HASAN ONTU</p>
+    </footer>
+
+    <script>
+        // Dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttara Unity Hospital</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: #003366;
+            background-image: url(img/18691897.jpg);
+            background-size: cover;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-image: url(logo.png);
+            background-size: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .title {
+            font-size: 45px;
+            font-family: "Comic Sans MS", cursive;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        nav {
+            background-color: #ffffff;
+            border: 1px solid #003366;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+            font-family: "Comic Sans MS", cursive;
+            font-size: 21px;
+            padding: 15px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            background-color: #003366;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+            gap: 20px;
+        }
+
+        .about-us {
+            flex: 1;
+            min-width: 300px;
+            background: radial-gradient(#ffffff, #f0f8ff);
+            border: 3px solid #003366;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 6px 6px 20px rgba(0,0,0,0.5);
+        }
+
+        .about-us h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #003366;
+            font-family: "Comic Sans MS", cursive;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .about-us p {
+            text-align: justify;
+            color: #000;
+        }
+
+        .slideshow-container {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .single-photo {
+            width: 426px;
+            height: 239px;
+            background-image: url(1.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            box-shadow: 6px 6px 20px rgba(0,0,0,0.5);
+        }
+
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ffffff;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .title {
+                font-size: 30px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            .single-photo {
+                width: 100%;
+                max-width: 426px;
+                height: 239px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="title">Uttara Unity Hospital</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="patient.php">Patient & Visitor's</a></li>
+            <li><a href="doctor.php">Doctors</a></li>
+            <li><a href="feedback.php">Feedback</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="about-us">
+            <h2>About Us</h2>
+            <hr>
+            <p>In order to improve medical communications to patients, the medical community, and healthcare providers, the hospital was founded in 2025. The hospital genuinely comprehends the traumas that arise in emergency situations. We are aware of the emotional and financial burden that frequently follows a medical problem, as well as how challenging it may be to manage therapy. Patients and their families are given priority in our delicate care.</p>
+            <p>We support medical professionals in providing fast, accurate, and efficient treatment for their patients. With our own brand of support and dedication to providing compassionate services, we help patients and their families.</p>
+            <p>The hospital makes use of the most recent and advanced technologies. Nevertheless, we are fully committed to the advancement of technology. On the other end of the call, Hospital has been and will remain a kind and understanding voice. While upholding the highest standards of moral and caring communications management in the medical industry, the hospital aims to exceed the expectations of its patients.</p>
+        </section>
+
+        <div class="slideshow-container">
+            <div class="single-photo"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; <span id="year"></span> - All Rights Reserved - <a href="#">UU Hospital</a></p>
+        <p>Powered By UU Hospital</p>
+        <p>Developed by - ASIF HASAN ONTU</p>
+    </footer>
+
+    <script>
+        // Dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
